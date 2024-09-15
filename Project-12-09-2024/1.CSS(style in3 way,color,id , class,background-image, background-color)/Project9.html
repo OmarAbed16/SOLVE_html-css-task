@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: olive;
+      }
+
+      .class-selector {
+        color: lightblue;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      #id-selector {
+        background-color: cyan;
+        font-size: 1.2rem;
+        padding: 5px;
+      }
+
+      .red-text {
+        color: red;
+      }
+
+      .blue-text {
+        color: blue;
+      }
+
+      /* Odd and Even selectors */
+      .container p:nth-child(odd) {
+        background-color: #f4e1f2;
+        color: darkblue;
+      }
+
+      .container p:nth-child(even) {
+        background-color: #fbd2c9;
+        color: red;
+      }
+
+      /* Footer links */
+      footer {
+        margin-top: 20px;
+        font-size: 0.8rem;
+        color: gray;
+      }
+
+      footer a {
+        color: dodgerblue;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    <p class="class-selector">I'm a class selector</p>
+
+    <p id="id-selector">I'm the ID selector. Here I am a boss</p>
+
+    <p class="red-text">I'm red</p>
+    <p class="red-text">I'm also red</p>
+    <p class="blue-text">What is going on? why am I blue?!</p>
+
+    <div class="container">
+      <p>I'm odd number</p>
+      <p>I'm even number</p>
+      <p>I'm also odd number</p>
+      <p>Hm.. I'm even number</p>
+    </div>
+
+    <footer>
+      © <a href="#">Here is my GitHub page</a><br />
+      Yes, it looks like promotion... but also let me put my Instagram page...
+      :)
+    </footer>
+  </body>
+</html>

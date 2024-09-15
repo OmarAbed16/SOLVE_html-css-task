@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragraph Background Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      p {
+        height: 200px;
+      }
+      .paragraph1 {
+        background-color: lightpink;
+        padding: 20px;
+        border: 1px solid black;
+      }
+
+      .paragraph2 {
+        background-color: lightgreen;
+        padding: 20px;
+        border: 1px solid black;
+      }
+
+      .paragraph3 {
+        background-image: url("../Media/flowers.png"),
+          url("../Media/html-banner.png");
+        background-position: top left, bottom right;
+        background-size: contain, cover;
+        background-repeat: no-repeat, no-repeat;
+        color: white;
+        padding: 20px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="paragraph1">Lorem ipsum dolor sit amet consectetur...</p>
+
+    <p class="paragraph2">Lorem ipsum dolor sit amet consectetur...</p>
+
+    <p class="paragraph3">Lorem ipsum dolor sit amet consectetur...</p>
+  </body>
+</html>

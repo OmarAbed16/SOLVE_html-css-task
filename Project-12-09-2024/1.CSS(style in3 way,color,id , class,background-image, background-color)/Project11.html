@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .contact-form {
+        background-color: #ffe0b2;
+        padding: 20px;
+        border: 3px solid #4d4d4d;
+        width: 350px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form h2 {
+        background-color: #d76a63;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff6e0;
+        outline: none;
+      }
+
+      .contact-form input::placeholder,
+      .contact-form textarea::placeholder {
+        color: #bbb;
+      }
+
+      .contact-form button {
+        background-color: #ffcc00;
+        color: #333;
+        padding: 12px;
+        border: none;
+        width: 100%;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .contact-form button:hover {
+        background-color: #e6b800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>Contact Us!</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Name......" required />
+        <input type="email" name="email" placeholder="Email....." required />
+        <input type="text" name="subject" placeholder="Subject....." required />
+        <textarea
+          name="message"
+          placeholder="Message........"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </body>
+</html>

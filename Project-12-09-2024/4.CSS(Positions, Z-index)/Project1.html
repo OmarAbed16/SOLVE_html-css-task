@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position and Z-index Example</title>
+    <style>
+      .div1 {
+        position: relative;
+        height: 100px;
+        width: 100%;
+        border-style: double;
+      }
+
+      .div2 {
+        position: fixed;
+        top: 10%;
+        left: 30%;
+        height: 200px;
+        width: 500px;
+        background-color: blue;
+        z-index: 2;
+      }
+
+      .div3 {
+        position: absolute;
+        top: 0%;
+        left: 30%;
+        height: 100px;
+        width: 400px;
+        background-color: greenyellow;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <p>Div 1 (Relative)</p>
+    </div>
+
+    <div class="div2">
+      <p>Div 2 (Fixed)</p>
+    </div>
+
+    <div class="div3">
+      <p>Div 3 (Absolute)</p>
+    </div>
+  </body>
+</html>

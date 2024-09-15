@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatPhotoApp</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+
+        padding: 20px;
+      }
+
+      h1 {
+        color: #ff4500;
+      }
+
+      a {
+        text-decoration: none;
+        color: #551a8b;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .highlight {
+        color: #551a8b;
+      }
+
+      .cat-profile {
+        margin: 20px 0;
+      }
+
+      .cat-photo {
+        border-radius: 50%;
+        border: 5px solid green;
+        width: 100px;
+        height: 100px;
+      }
+
+      .cat-info {
+        background-color: #ccc;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      .cat-likes,
+      .cat-hates {
+        margin: 10px 0;
+      }
+
+      .cat-options {
+        background-color: #006400;
+        color: #fff;
+        padding: 10px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        border: none;
+        margin-right: 10px;
+      }
+
+      button {
+        padding: 5px 10px;
+        background-color: #fff;
+        color: #006400;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CatPhotoApp</h1>
+      <p>
+        <a href="#"
+          >Click here to view more <span class="highlight">cat photos</span>.</a
+        >
+      </p>
+    </header>
+
+    <section class="cat-profile">
+      <img
+        src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+        alt="Cat photo"
+        class="cat-photo"
+      />
+    </section>
+
+    <section class="cat-info">
+      <div class="cat-likes">
+        <h2>Things cats love:</h2>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+      </div>
+      <div class="cat-hates">
+        <h2>Top 3 things cats hate:</h2>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cat-options">
+      <form>
+        <label
+          ><input type="radio" name="cat-location" value="indoor" checked />
+          Indoor</label
+        >
+        <label
+          ><input type="radio" name="cat-location" value="outdoor" />
+          Outdoor</label
+        >
+
+        <br />
+
+        <label
+          ><input
+            type="checkbox"
+            name="cat-personality"
+            value="loving"
+            checked
+          />
+          Loving</label
+        >
+        <label
+          ><input type="checkbox" name="cat-personality" value="lazy" />
+          Lazy</label
+        >
+        <label
+          ><input type="checkbox" name="cat-personality" value="energetic" />
+          Energetic</label
+        >
+
+        <br />
+
+        <input type="text" placeholder="cat photo URL" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

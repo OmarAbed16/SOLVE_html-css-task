@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange" />
+    <link rel="icon" href="Media/p1.png" type="image/png" />
+    <title>Sign In</title>
+    <style>
+      table {
+        border-collapse: separate;
+        border: 1px solid black;
+        width: 300px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        background-color: aqua;
+      }
+
+      #mid {
+        text-align: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <th colspan="2">
+            <h2
+              style="
+                border: 1px solid black;
+                margin: 10px;
+                background-color: blanchedalmond;
+                color: red;
+              "
+            >
+              Registration Form
+            </h2>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <h4
+              style="
+                border: 1px solid black;
+                margin: 0px 10px;
+                padding: 0px 5px;
+              "
+            >
+              Name:
+            </h4>
+          </td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <h4
+              style="
+                border: 1px solid black;
+                margin: 0px 10px;
+                padding: 0px 5px;
+              "
+            >
+              Password:
+            </h4>
+          </td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td>
+            <h4 style="margin: 0px 10px; padding: 20px 5px">Address:</h4>
+          </td>
+          <td><textarea style="width: 150px" rows="4" cols="50"></textarea></td>
+        </tr>
+        <tr>
+          <td>Select Game:</td>
+          <td>
+            <input type="checkbox" /> Hockey<br />
+            <input type="checkbox" /> Football<br />
+            <input type="checkbox" /> Badminton<br />
+            <input type="checkbox" /> Cricket<br />
+            <input type="checkbox" /> Volleyball
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+          </td>
+        </tr>
+        <tr>
+          <td>Select Your Age:</td>
+          <td>
+            <select>
+              <option value="18">18</option>
+              <option value="19">19</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Select Photo:</td>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="button">Click Me</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

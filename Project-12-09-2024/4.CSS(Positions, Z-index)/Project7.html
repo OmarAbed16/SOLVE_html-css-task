@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index and Position Example</title>
+    <style>
+      :root {
+        --left: 25px;
+        --top: 25px;
+        --z-index: 1;
+      }
+      .box {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        font-size: 24px;
+      }
+
+      .box1 {
+        top: calc(var(--top) * 1);
+        left: calc(var(--left) * 1);
+        z-index: calc(var(--z-index) * 10);
+      }
+
+      .box2 {
+        top: calc(var(--top) * 2);
+        left: calc(var(--left) * 2);
+        z-index: calc(var(--z-index) * 2);
+      }
+
+      .box3 {
+        top: calc(var(--top) * 3);
+        left: calc(var(--left) * 3);
+        z-index: calc(var(--z-index) * 3);
+      }
+
+      .box4 {
+        top: calc(var(--top) * 4);
+        left: calc(var(--left) * 4);
+        z-index: calc(var(--z-index) * 4);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="box box1"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPIfiGgUML8G3ZqsNLHfaCnZK3I5g4tJabQ&s"
+    />
+    <img
+      class="box box2"
+      src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726185600&semt=ais_hybrid"
+    />
+    <img
+      class="box box3"
+      src="https://cdn.esawebb.org/archives/images/screen/weic2218a.jpg"
+    />
+    <img
+      class="box box4"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s"
+    />
+  </body>
+</html>

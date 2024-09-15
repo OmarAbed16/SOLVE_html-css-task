@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index and Position Example</title>
+    <style>
+      :root {
+        --left: 25px;
+        --top: 25px;
+        --z-index: 1;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box1 {
+        box-shadow: 0px 0px 0px 3px blue;
+        background: white;
+        top: calc(var(--top) * 1);
+        left: calc(var(--left) * 1);
+        z-index: calc(var(--z-index) * 1);
+      }
+
+      .box2 {
+        box-shadow: 0px 0px 0px 3px red;
+        background: white;
+        top: calc(var(--top) * 2);
+        left: calc(var(--left) * 2);
+        z-index: calc(var(--z-index) * 2);
+      }
+
+      .box3 {
+        box-shadow: 0px 0px 0px 3px yellow;
+        background: white;
+        top: calc(var(--top) * 3);
+        left: calc(var(--left) * 3);
+        z-index: calc(var(--z-index) * 3);
+      }
+
+      .box4 {
+        box-shadow: 0px 0px 0px 3px green;
+        background: white;
+        top: calc(var(--top) * 4);
+        left: calc(var(--left) * 4);
+        z-index: calc(var(--z-index) * 4);
+      }
+
+      .box5 {
+        box-shadow: 0px 0px 0px 3px rgb(47, 0, 128);
+        background: white;
+        top: calc(var(--top) * 5);
+        left: calc(var(--left) * 5);
+        z-index: calc(var(--z-index) * 5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">Multi box shadow</div>
+    <div class="box box2">Multi box shadow</div>
+    <div class="box box3">Multi box shadow</div>
+    <div class="box box4">Multi box shadow</div>
+    <div class="box box5">Multi box shadow</div>
+  </body>
+</html>
