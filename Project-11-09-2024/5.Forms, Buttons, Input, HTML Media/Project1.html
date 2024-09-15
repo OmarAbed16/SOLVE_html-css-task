@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JS, Coding Academy, Orange" />
+    <link rel="icon" href="Media/p1.png" type="image/png" />
+    <style>
+      form {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 20px;
+        text-align: right;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 75%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      input[type="submit"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      section {
+        display: flex;
+        align-items: start;
+        justify-content: end;
+      }
+    </style>
+    <title>Hello world</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <section>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br /><br />
+      </section>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
