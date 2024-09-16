@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .hLinks > span {
+        margin-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header > section,
+      footer > section {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+      }
+      footer {
+        background-color: rgb(231, 231, 231);
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+      }
+
+      header {
+        top: 0px;
+        position: fixed;
+        width: 100%;
+      }
+
+      main > section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+      }
+
+      input {
+        border-radius: 30px;
+        margin-bottom: 20px;
+        border: 0.5px solid black;
+        height: 30px;
+        width: 400px;
+      }
+
+      button {
+        background-color: rgb(228, 228, 228);
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div class="hLinks">
+          <span>About</span>
+          <span>Store</span>
+        </div>
+        <div class="hLinks">
+          <span>Profile</span>
+          <span>Settings</span>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <img src="../Media/p1.png" alt="" />
+        <h1
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: 10px;
+          "
+        >
+          WEB <br />APPLICATION
+        </h1>
+        <input type="text" />
+        <div>
+          <button>Do the thing!</button>
+          <button>Do the other thing!</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div class="hLinks">
+          <span>About</span>
+          <span>Store</span>
+        </div>
+        <div class="hLinks">
+          <span>Profile</span>
+          <span>Settings</span>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
