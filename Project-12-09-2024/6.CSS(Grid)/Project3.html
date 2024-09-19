@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Example - Part 3</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+
+      .grid-layout {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar nav"
+          "sidebar article"
+          "footer footer";
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: #ffd700;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5em;
+        color: white;
+      }
+
+      .nav {
+        grid-area: nav;
+        background-color: #00bfff;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: #ff6347;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      .article {
+        grid-area: article;
+        background-color: #d3d3d3;
+        padding: 20px;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: #696969;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <header class="header">Header</header>
+      <nav class="nav">Nav</nav>
+      <aside class="sidebar">Sidebar</aside>
+      <article class="article">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Phasellus habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Curabitur bibendum turpis quis interdum
+          semper. Sed at pharetra neque, nec lacinia diam.
+        </p>
+        <p>
+          Cras ex ut nibh accumsan ullamcorper. Fusce rutrum, metus id porta
+          porttitor, leo ipsum congue velit, vel hendrerit lectus nisi a odio.
+          Vivamus vehicula eros id mattis pharetra.
+        </p>
+      </article>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>

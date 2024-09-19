@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Using Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .card {
+        display: grid;
+        grid-template-areas:
+          "profile-pic user-info"
+          "post-image post-image"
+          "social-buttons social-buttons"
+          "dots dots";
+        grid-template-columns: 50px 1fr;
+        background-color: white;
+        padding: 20px;
+        width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .profile-pic {
+        grid-area: profile-pic;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+      }
+
+      .user-info {
+        grid-area: user-info;
+        padding-left: 10px;
+      }
+
+      .user-info h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .user-info p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .post-image {
+        grid-area: post-image;
+        height: 200px;
+        background-color: #e74c3c;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      .social-buttons {
+        grid-area: social-buttons;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+
+      .social-buttons button {
+        background-color: transparent;
+        border: none;
+        color: #3498db;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .dots {
+        grid-area: dots;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .dots span {
+        width: 10px;
+        height: 10px;
+        background-color: #e74c3c;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+
+      #fl {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="profile-pic"></div>
+      <div class="user-info">
+        <h2>Arnold Schwarzenegger</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus
+          nibh massa, quis semper nunc molestie quis.
+        </p>
+      </div>
+      <div class="post-image"></div>
+
+      <div id="fl">
+        <div class="social-buttons">
+          <button>Like</button>
+          <button>Tweet</button>
+          <button>Comment</button>
+        </div>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

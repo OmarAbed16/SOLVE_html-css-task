@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      #main {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "main main main main"
+          "footer footer footer footer";
+        gap: 10px;
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+      .items {
+        background-color: rgb(236, 236, 236);
+        padding: 10px;
+      }
+
+      .item1 {
+        grid-area: header header header header;
+
+        display: grid;
+        grid-template-areas:
+          "hSub hSub"
+          "fSub fSub";
+        gap: 10px;
+      }
+
+      .item2 {
+        grid-area: main main main main;
+      }
+
+      .item3 {
+        grid-area: footer footer footer footer;
+        display: grid;
+        grid-template-areas:
+          "hSub hSub"
+          "fSub fSub";
+        gap: 10px;
+      }
+
+      .four {
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+      }
+
+      .hSub {
+        grid-area: hSub hSub;
+      }
+
+      .fSub {
+        grid-area: fSub fSub;
+      }
+
+      .item6 {
+        display: grid;
+        grid-template-areas:
+          "hSub"
+          "fSub";
+        gap: 10px;
+      }
+
+      .item7 {
+        display: grid;
+        grid-template-areas: "hSub hSub";
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="main">
+        <div class="items item1">item 1</div>
+        <div class="items item1">
+          <div class="four hSub">sub 1</div>
+          <div class="four hSub">sub 2</div>
+          <div class="four fSub">sub 3</div>
+          <div class="four fSub">sub 4</div>
+        </div>
+        <div class="items item1">
+          <div class="four hSub">sub 1</div>
+          <div class="four hSub">sub 2</div>
+          <div class="four fSub">sub 3</div>
+          <div class="four fSub">sub 4</div>
+        </div>
+        <div class="items item1">item 4</div>
+        <div class="items item2">item 5</div>
+        <div class="items item2 item6">
+          <div class="four hSub">sub 1</div>
+          <div class="four fSub">sub 2</div>
+        </div>
+        <div class="items item2 item7">
+          <div class="four hSub">sub 1</div>
+          <div class="four hSub">sub 2</div>
+        </div>
+        <div class="items item2">item 8</div>
+        <div class="items item3">
+          <div class="four hSub">sub 1</div>
+          <div class="four hSub">sub 2</div>
+          <div class="four fSub">sub 3</div>
+          <div class="four fSub">sub 4</div>
+        </div>
+        <div class="items item3">item 10</div>
+        <div class="items item3">item 11</div>
+        <div class="items item3">
+          <div class="four hSub">sub 1</div>
+          <div class="four hSub">sub 2</div>
+          <div class="four fSub">sub 3</div>
+          <div class="four fSub">sub 4</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

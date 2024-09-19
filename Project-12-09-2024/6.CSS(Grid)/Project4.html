@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Example - Part 4</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .image-container {
+        position: relative;
+      }
+
+      .image-container img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 4px;
+      }
+
+      .available {
+        background-color: green;
+      }
+
+      .sold {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>4. Create the following using Grid</h1>
+    <div class="image-grid">
+      <div class="image-container">
+        <img src="../Media/html-banner.png" alt="Image 1" />
+        <span class="label available">Available</span>
+      </div>
+      <div class="image-container">
+        <img src="../Media/html-banner.png" alt="Image 2" />
+        <span class="label sold">Sold</span>
+      </div>
+      <div class="image-container">
+        <img src="../Media/html-banner.png" alt="Image 3" />
+        <span class="label sold">Sold</span>
+      </div>
+      <div class="image-container">
+        <img src="../Media/html-banner.png" alt="Image 4" />
+        <span class="label available">Available</span>
+      </div>
+    </div>
+  </body>
+</html>

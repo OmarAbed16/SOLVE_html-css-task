@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 10px 15%;
+      }
+      header img {
+        width: 50px;
+      }
+      main p {
+        margin-top: 20px;
+        color: rgb(164, 140, 2);
+      }
+      main img {
+        width: 100%;
+      }
+
+      .checkbox-section {
+        background-color: rgb(251, 251, 229);
+        padding: 20px;
+
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .checkbox-section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .checkbox-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .checkbox-item {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .checkbox-item:hover {
+        background-color: #e0e0e0;
+      }
+
+      .checkbox-item input[type="checkbox"] {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .checkbox-item label {
+        cursor: pointer;
+      }
+      main {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="../Media/p1.png" alt="logo" />
+      <hr />
+    </header>
+    <main>
+      <h1><strong>chocolate pizza</strong></h1>
+      <p><i>posted on 1/7/2021/Dessarts</i></p>
+      <img src="../Media/html-banner.png" alt="" />
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+        numquam eaque. Ea iste atque tempore, magnam asperiores consequatur a
+        velit praesentium expedita officiis eligendi harum. Ipsa cum et enim hic
+        explicabo quas ullam debitis excepturi delectus tenetur asperiores iste
+        distinctio laudantium facilis ea corporis nulla, placeat, facere vero
+        modi natus ab dolorem. Facilis doloribus officia eveniet, illum quidem
+        temporibus. Possimus eaque corrupti laborum ea veniam aliquam deserunt
+        provident illum natus veritatis sed hic, debitis repellendus pariatur
+        officiis recusandae ad, enim animi ratione minus iste. Numquam facilis
+        et harum voluptatum corporis architecto quia neque voluptatem omnis esse
+        mollitia, porro vero incidunt voluptates in doloribus cum. Molestias
+        facilis aperiam corrupti ratione alias exercitationem. Laudantium ea
+        dolorum quis, explicabo deleniti magni reiciendis ut officiis blanditiis
+        dolores nisi suscipit maiores.
+        <br /><br />
+        Culpa sit animi reprehenderit dicta ipsum iste alias quibusdam quos
+        tempore accusantium, magnam a cupiditate labore molestias aliquam, nihil
+        amet facilis? Doloremque nobis ratione optio obcaecati consectetur dolor
+        assumenda quod eum aperiam illum blanditiis dignissimos dolorum, sit
+        culpa voluptas officiis saepe. Asperiores magnam perspiciatis vero ipsa
+        temporibus adipisci placeat quisquam saepe voluptates repudiandae.
+        <br /><br />
+        Debitis molestiae perferendis a, neque soluta amet quibusdam quas
+        repellendus nulla sed at saepe aut obcaecati, provident voluptatem!
+        Modi, illo? Voluptatum?
+      </p>
+
+      <div class="checkbox-section">
+        <h3>Ingredients</h3>
+        <div class="checkbox-grid">
+          <div class="checkbox-item">
+            <input type="checkbox" id="ingredient1" />
+            <label for="ingredient1">1 1/2 cups milk</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="ingredient2" />
+            <label for="ingredient2">1/2 cup mascarpone</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="ingredient3" />
+            <label for="ingredient3">1/2 tsp pink salt</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="ingredient4" />
+            <label for="ingredient4">1 lbs black mission figs</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="ingredient5" />
+            <label for="ingredient5">1/2 cup brown sugar</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="ingredient6" />
+            <label for="ingredient6">2-4 tbsp water</label>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img
+        style="width: 100px; border-radius: 50%"
+        src="../Media/flowers.png"
+        alt=""
+      />
+      <h1>omar fathi</h1>
+      <div style="display: flex; justify-content: space-between">
+        <p style="width: 600px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eos
+          obcaecati ratione voluptates quis laborum sit ducimus omnis? Repellat,
+          nemo?
+        </p>
+
+        <button
+          style="
+            background-color: rgb(249, 103, 127);
+            color: white;
+            padding: 5px 15px;
+          "
+        >
+          Share Recipe
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
